@@ -81,7 +81,6 @@
     <section id="inicio" class="min-h-screen flex flex-col items-center justify-center py-16 px-4 bg-gray-900">
         <div class="container mx-auto text-center mb-8">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Tu transformación comienza ahora</h1>
-            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">Aprende las estrategias que usan los creadores exitosos para hacer crecer sus audiencias y monetizar su contenido</p>
         </div>
         
         <div class="w-full max-w-2xl mx-auto mb-5 lg:mb-8 rounded-lg overflow-hidden shadow-2xl">
@@ -105,199 +104,112 @@
     </section>
     <section id="precio" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Oferta Especial por Tiempo Limitado</h2>
-            <p class="text-lg text-gray-600 mb-8">Aprovecha ahora y obtén acceso a todos nuestros cursos con un descuento exclusivo</p>
-            
-            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto">
-                <div class="flex justify-center items-baseline mb-6">
-                    <span class="text-2xl text-gray-500 line-through mr-4">$297</span>
-                    <span class="text-4xl md:text-5xl font-bold text-primary">$97</span>
-                </div>
-                
-                <div id="countdown" class="flex justify-center space-x-4 mb-8">
-                    <div class="bg-gray-800 text-white rounded-lg p-3 text-center">
-                        <span class="text-2xl font-bold" id="days">02</span>
-                        <span class="block text-sm">Días</span>
-                    </div>
-                    <div class="bg-gray-800 text-white rounded-lg p-3 text-center">
-                        <span class="text-2xl font-bold" id="hours">12</span>
-                        <span class="block text-sm">Horas</span>
-                    </div>
-                    <div class="bg-gray-800 text-white rounded-lg p-3 text-center">
-                        <span class="text-2xl font-bold" id="minutes">45</span>
-                        <span class="block text-sm">Minutos</span>
-                    </div>
-                    <div class="bg-gray-800 text-white rounded-lg p-3 text-center">
-                        <span class="text-2xl font-bold" id="seconds">30</span>
-                        <span class="block text-sm">Segundos</span>
-                    </div>
-                </div>
-                
-                <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6 text-left">
-                    <p class="font-semibold">✅ Garantía de 30 días: Si no quedas satisfecho, te devolvemos tu dinero.</p>
-                </div>
-                
-                <button class="bg-primary text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-purple-700 transition transform hover:scale-105 w-full">
-                    Aprovechar oferta - Solo $97
-                </button>
+          <h2 class="text-3xl md:text-4xl font-heading font-bold mb-10">
+            Oferta Especial por Tiempo Limitado
+          </h2>
+      
+          <!-- Contenedor de las dos tarjetas -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-10">
+            <!-- Tarjeta Plan General -->
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+              <h3 class="text-2xl font-semibold mb-4">Plan General</h3>
+              <div class="flex justify-center items-baseline mb-6">
+                <span class="text-2xl text-gray-500 line-through mr-4">$297</span>
+                <span class="text-4xl md:text-5xl font-bold text-primary">$97</span>
+              </div>
+              <button
+                class="bg-primary text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-purple-700 transition transform hover:scale-105 w-full"
+              >
+                Elegir Plan General
+              </button>
             </div>
+      
+            <!-- Tarjeta Plan Gold -->
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+              <h3 class="text-2xl font-semibold mb-4">Plan Gold</h3>
+              <div class="flex justify-center items-baseline mb-6">
+                <span class="text-2xl text-gray-500 line-through mr-4">$497</span>
+                <span class="text-4xl md:text-5xl font-bold text-primary">$197</span>
+              </div>
+              <button
+                class="bg-primary text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-purple-700 transition transform hover:scale-105 w-full"
+              >
+                Elegir Plan Gold
+              </button>
+            </div>
+          </div>
+      
+          <!-- Contador compartido -->
+          <div id="countdown" class="flex justify-center space-x-4">
+            <div class="bg-gray-800 text-white rounded-lg p-3 text-center">
+              <span class="text-2xl font-bold" id="days">02</span>
+              <span class="block text-sm">Días</span>
+            </div>
+            <div class="bg-gray-800 text-white rounded-lg p-3 text-center">
+              <span class="text-2xl font-bold" id="hours">12</span>
+              <span class="block text-sm">Horas</span>
+            </div>
+            <div class="bg-gray-800 text-white rounded-lg p-3 text-center">
+              <span class="text-2xl font-bold" id="minutes">45</span>
+              <span class="block text-sm">Minutos</span>
+            </div>
+            <div class="bg-gray-800 text-white rounded-lg p-3 text-center">
+              <span class="text-2xl font-bold" id="seconds">30</span>
+              <span class="block text-sm">Segundos</span>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
 
-    <!-- Sección ¿Qué voy a aprender? -->
-    <section id="aprender" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-4">¿Qué voy a aprender al finalizar el curso?</h2>
-            <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">Domina todas las habilidades necesarias para convertirte en un creador de contenido exitoso</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Tarjeta 1 -->
-                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
-                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Producción de Video</h3>
-                    <p class="text-gray-600">Aprende a crear videos de alta calidad con equipo básico y técnicas profesionales de edición.</p>
-                </div>
-                
-                <!-- Tarjeta 2 -->
-                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
-                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Estrategias de Crecimiento</h3>
-                    <p class="text-gray-600">Descubre cómo aumentar tu audiencia orgánicamente con técnicas comprobadas.</p>
-                </div>
-                
-                <!-- Tarjeta 3 -->
-                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
-                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Monetización</h3>
-                    <p class="text-gray-600">Aprende múltiples formas de generar ingresos con tu contenido y construir un negocio sostenible.</p>
-                </div>
-                
-                <!-- Tarjeta 4 -->
-                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
-                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Análisis de Datos</h3>
-                    <p class="text-gray-600">Interpreta las métricas clave para optimizar tu contenido y maximizar tu alcance.</p>
-                </div>
-                
-                <!-- Tarjeta 5 -->
-                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
-                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Construcción de Comunidad</h3>
-                    <p class="text-gray-600">Desarrolla una comunidad leal y engaged alrededor de tu marca personal.</p>
-                </div>
-                
-                <!-- Tarjeta 6 -->
-                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
-                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Branding Personal</h3>
-                    <p class="text-gray-600">Crea una marca personal sólida que te diferencie y conecte con tu audiencia ideal.</p>
-                </div>
-            </div>
+<!-- Sección ¿Qué voy a aprender? -->
+<section id="aprender" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-8">
+        ¿Qué voy a aprender al finalizar el curso?
+      </h2>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Columna izquierda: imagen -->
+        <div>
+          <img src="./assets/imagen-tipo.jpg" alt="Aprender a crear contenido" class="rounded-lg shadow-lg w-full" />
         </div>
-    </section>
-
-    <!-- Botón CTA Final -->
-    <section id="contacto" class="py-16 bg-primary text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6">¿Listo para comenzar tu journey como creador?</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">Únete a miles de estudiantes que ya están transformando su pasión en profesión</p>
-            
-            <div class="flex justify-center items-baseline mb-8">
-                <span class="text-2xl text-purple-200 line-through mr-4">$297</span>
-                <span class="text-4xl md:text-5xl font-bold">$97</span>
-            </div>
-            
-            <button class="bg-white text-primary text-lg font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition transform hover:scale-105">
-                Quiero Empezar Ahora - Solo $97
-            </button>
-            
-            <p class="mt-6 text-purple-200">✅ Garantía de 30 días - Acceso de por vida - Soporte 1-a-1</p>
+  
+        <!-- Columna derecha: puntos de aprendizaje -->
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl font-semibold mb-1">Producción de Video</h3>
+            <p class="text-gray-600">
+              Aprende a crear videos de alta calidad con equipo básico y técnicas profesionales de edición.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-1">Estrategias de Crecimiento</h3>
+            <p class="text-gray-600">
+              Descubre cómo aumentar tu audiencia orgánicamente con técnicas comprobadas.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-1">Monetización</h3>
+            <p class="text-gray-600">
+              Aprende múltiples formas de generar ingresos con tu contenido y construir un negocio sostenible.
+            </p>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-2xl font-heading font-bold text-primary mb-4">Escuela de Creadores</h3>
-                    <p class="text-gray-400">Formando a la próxima generación de creadores de contenido digital.</p>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#inicio" class="text-gray-400 hover:text-white transition">Inicio</a></li>
-                        <li><a href="#precio" class="text-gray-400 hover:text-white transition">Precio</a></li>
-                        <li><a href="#aprender" class="text-gray-400 hover:text-white transition">¿Qué aprenderé?</a></li>
-                        <li><a href="#contacto" class="text-gray-400 hover:text-white transition">Contacto</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
-                    <ul class="space-y-2">
-                        <li class="text-gray-400">info@escueladecreadores.com</li>
-                        <li class="text-gray-400">+1 (234) 567-8900</li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Síguenos</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>© 2023 Escuela de Creadores. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
+      </div>
+  
+      <!-- CTA centrado -->
+      <div class="mt-12 flex justify-center">
+        <button
+          class="bg-primary text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-purple-700 transition transform hover:scale-105"
+        >
+          Quiero Empezar Ahora
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  
 
     <script>
         // Menú móvil
