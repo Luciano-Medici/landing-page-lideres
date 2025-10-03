@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escuela de Creadores - Conviértete en Creador de Contenido Profesional</title>
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Preconexión Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts: Open Sans & Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Variables CSS para personalización rápida -->
+    <link rel="stylesheet" href="./variables.css">
+    <!-- Estilos personalizados por sección (usa variables) -->
+    <link rel="stylesheet" href="./custom-sections.css">
+
+    <!-- Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -23,17 +36,18 @@
             }
         }
     </script>
+    
+    <!-- Compatibilidad aspect-ratio si Tailwind no lo soporta -->
     <style type="text/css">
-        /* Si tu versión de Tailwind no soporta aspect-ratio, usa este CSS */
         .aspect-video {
             aspect-ratio: 16 / 9;
         }
     </style>
 </head>
 <body class="font-body">
-  <section id="inicio" class="bg-gray-900 flex flex-col min-h-screen">
+  <section id="inicio" class="flex flex-col min-h-screen">
     <div class="flex flex-col flex-1 justify-evenly items-center text-center w-full max-w-2xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
         TITULO PRINCIPAL
       </h1>
       <div class="w-full rounded-lg overflow-hidden shadow-2xl aspect-video">
@@ -43,7 +57,7 @@
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <a href="./contacto.html"
-        class="bg-purple-600 hover:bg-purple-700 text-white text-lg font-semibold px-8 py-4 rounded-full transition transform hover:scale-105 inline-block">
+        class="color text-lg font-semibold px-8 py-4 rounded-full transition transform hover:scale-105 inline-block">
         Quiero inscribirme ahora
       </a>
     </div>
@@ -51,7 +65,7 @@
       
 
 <!-- Sección ¿Qué voy a aprender? -->
-<section id="aprender" class="py-16 bg-gray-50">
+<section id="aprender" class="py-16">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-8">
         ¿Qué beneficios obtendré?
@@ -67,19 +81,19 @@
         <div class="space-y-6">
           <div>
             <h3 class="text-xl font-semibold mb-1">Beneficio 1</h3>
-            <p class="text-gray-600">
+            <p>
               Descripción beneficio 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam deleniti laboriosam voluptatem provident quas ipsa iste vero. Maxime, vel, accusantium tempora, voluptate at earum qui eaque atque rerum mollitia corporis?
             </p>
           </div>
           <div>
             <h3 class="text-xl font-semibold mb-1">Beneficio 2</h3>
-            <p class="text-gray-600">
+            <p>
               Descripción beneficio 2. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, sequi deleniti veniam fugiat, molestiae quidem optio quasi in nemo, omnis autem eius repellat. Vitae debitis sed recusandae ipsam eligendi atque?
             </p>
           </div>
           <div>
             <h3 class="text-xl font-semibold mb-1">Beneficio 3</h3>
-            <p class="text-gray-600">
+            <p>
               Descripción beneficio 3. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ut expedita, facilis tempore ab nesciunt eos maxime similique commodi debitis quas labore est soluta cum perferendis velit excepturi voluptatibus numquam.
             </p>
           </div>
@@ -88,17 +102,15 @@
   
       <!-- CTA centrado -->
       <div class="mt-12 flex justify-center">
-        <a
-          href="./contacto.html"
-          class="bg-primary text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-purple-700 transition transform hover:scale-105"
-        >
-          Quiero Empezar Ahora
+        <a href="./contacto.html"
+          class="color text-lg font-semibold px-8 py-4 rounded-full transition transform hover:scale-105 inline-block">
+          Quiero inscribirme ahora
         </a>
       </div>
     </div>
   </section>
 
-  <section id="precio" class="py-16 bg-gray-100">
+  <section id="precio" class="py-16">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-10">
         Oferta (titulo)
@@ -107,43 +119,39 @@
       <!-- Contenedor de las dos tarjetas -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-10">
         <!-- Tarjeta Plan General -->
-        <div class="bg-white rounded-2xl shadow-xl p-8">
+        <div class="card rounded-2xl shadow-xl p-8">
           <h3 class="text-2xl font-semibold mb-4">Opcion 1</h3>
           <div class="flex justify-center items-baseline mb-6">
             <span class="text-2xl text-gray-500 line-through mr-4">$2250</span>
             <span class="text-4xl md:text-5xl font-bold text-primary">$225</span>
           </div>
-          <a
-            href="./contacto.html"
-            class="bg-primary text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-purple-700 transition transform hover:scale-105 w-full"
-          >
-            Elegir opcion 1
-        </a>
+          <a href="./contacto.html"
+            class="color text-lg font-semibold px-8 py-4 rounded-full transition transform hover:scale-105 inline-block">
+            Elegir opción 1
+          </a>
         </div>
   
         <!-- Tarjeta Plan Gold -->
-        <div class="bg-white rounded-2xl shadow-xl p-8">
+        <div class="card rounded-2xl shadow-xl p-8">
           <h3 class="text-2xl font-semibold mb-4">Opcion 2</h3>
           <div class="flex justify-center items-baseline mb-6">
             <span class="text-2xl text-gray-500 line-through mr-4">$4500</span>
             <span class="text-4xl md:text-5xl font-bold text-primary">$450</span>
           </div>
-          <a
-            href="./contacto.html"
-            class="bg-primary text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-purple-700 transition transform hover:scale-105 w-full"
-          >
-            Elegir opcion 2
-        </a>
+          <a href="./contacto.html"
+            class="color text-lg font-semibold px-8 py-4 rounded-full transition transform hover:scale-105 inline-block">
+            Elegir opción 2
+          </a>
         </div>
       </div>
   
       <!-- Contador compartido -->
       <div id="countdown" class="flex justify-center space-x-4">
-        <div class="bg-gray-800 text-white rounded-lg p-3 text-center">
+        <div class="rounded-lg p-3 text-center">
           <span class="text-2xl font-bold" id="minutes">29</span>
           <span class="block text-sm">Minutos</span>
         </div>
-        <div class="bg-gray-800 text-white rounded-lg p-3 text-center">
+        <div class="rounded-lg p-3 text-center">
           <span class="text-2xl font-bold" id="seconds">59</span>
           <span class="block text-sm">Segundos</span>
         </div>

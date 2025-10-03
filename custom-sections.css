@@ -1,0 +1,63 @@
+/* Ejemplo: puedes incluir esto en un <style> dentro tu <head> o en una hoja aparte */
+#inicio {
+    background-color: var(--color-inicio-bg);
+    color: var(--color-inicio-text);
+  }
+  #inicio h1, #inicio h2, #inicio h3 {
+    font-family: var(--font-title);
+  }
+  #inicio p, #inicio li, #inicio span, #inicio a {
+    font-family: var(--font-text);
+  }
+  
+  #aprender {
+    background-color: var(--color-aprender-bg);
+  }
+  #aprender h2, #aprender h3 {
+    color: var(--color-aprender-title);
+    font-family: var(--font-title);
+  }
+  #aprender p {
+    color: var(--color-aprender-text);
+    font-family: var(--font-text);
+  }
+  
+  #precio {
+    background-color: var(--color-precio-bg);
+    .card{
+        background-color: var(--color-tarjeta-bg);
+        h2, h3{
+            color: var(--color-precio-title);
+            font-family: var(--font-title);
+        }
+        p, span{
+            color: var(--color-precio-text);
+            font-family: var(--font-text);
+        }
+    }
+    #countdown div{
+        background-color: var(--color-counter-bg);
+        color: var(--color-coutner-text);    
+    }
+  }
+
+  #testimonios {
+    background-color: var(--color-testimonios-bg);
+  }
+  #testimonios h2 {
+    color: var(--color-testimonios-title);
+    font-family: var(--font-title);
+  }
+  #testimonios p, #testimonios span {
+    color: var(--color-testimonios-text);
+    font-family: var(--font-text);
+  }
+  .color {
+    background-color: var(--color-btn-bg) !important;
+    color: var(--color-btn-text) !important;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  .color:hover {
+    background-color: var(--color-btn-bg-hover) !important;
+    color: var(--color-btn-text) !important;
+  }

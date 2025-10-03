@@ -1,0 +1,34 @@
+:root {
+    /* Hero */
+    --color-inicio-bg: #1a202c; /* Fondo del hero */
+    --color-inicio-text: #ffffff; /* Color del título en el hero */
+    --font-title: 'Poppins', 'Arial', sans-serif; /* Fuente para títulos */
+
+    /* Tipografía texto general */
+    --font-text: 'Open Sans', 'Verdana', sans-serif; /* Fuente para texto general */
+    
+    /* Sección ¿Que voy a aprender? */
+    --color-aprender-bg: #f9fafb; /* Fondo de la sección */
+    --color-aprender-title: #4b2995; /* Títulos en la sección */
+    --color-aprender-text: #222222; /* Texto en la sección */
+
+    /* Sección precio */
+    --color-precio-bg: #f3f4f6; /* Fondo de la sección de precios */
+    --color-tarjeta-bg: #ffffff; /* Fondo de las tarjetas de precio */
+    --color-precio-title: #4b2995; /* Títulos en la sección de precios */
+    --color-precio-text: #333333; /* Texto en la sección de precios */
+
+    /* Contador */
+    --color-counter-bg: red; /* Fondo del contador */
+    --color-coutner-text: white; /* Texto del contador */
+
+    /* Sección testimonios */
+    --color-testimonios-bg: #f9fafb; /* Fondo de la sección de testimonios */
+    --color-testimonios-title: #4b2995; /* Títulos en la sección de testimonios */
+    --color-testimonios-text: #222222; /* Texto en la sección de testimonios */
+
+    /* Botones  */
+    --color-btn-bg: #8B5CF6;        /* Color principal del botón */
+    --color-btn-bg-hover: #7C3AED;  /* Color al pasar el mouse */
+    --color-btn-text: #ffffff;      /* Color de texto */
+  }
